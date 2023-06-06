@@ -76,6 +76,76 @@
         </div>
 
         <!--  DESDE BASE DE DATOS -->
+        <div>
+          {% for c in cursos %}
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="{% static 'img/cur_/excel.jpg'%}" alt="">
+              <div class="card-body">
+                <div class="card-text">
+                  <p>{{nombre.cursos}} <br>
+                    sence		: 05478-EE <br>
+                    Area		: INFORMATICA <br>
+                    Modalidad	: Educación Distancia
+                  </p>
+                </div>
+  
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-primary btn-sm" role="button" aria-pressed="true">Mas Información..</a>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="{% static 'img/cur_/making.jpg'%}" alt="">
+              <div class="card-body">
+                <div class="card-text">
+                  <p>Herramientas Microsoft Project <br>
+                    sence		: 05478-MP <br>
+                    Area		: ADMINISTRACION <br>
+                    Modalidad	: Educación Presencial
+                  </p>
+                </div>
+  
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-primary btn-sm" role="button" aria-pressed="true">Mas Información..</a>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="{% static 'img/cur_/python.jpg'%}" alt="">
+              <div class="card-body">
+                <div class="card-text">
+                  <p>Programación en Python <br>
+                    sence		: 02654-PY <br>
+                    Area		: INFORMATICA <br>
+                    Modalidad	: Educación Presencial
+                  </p>
+                </div>
+  
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-primary btn-sm" role="button" aria-pressed="true">Mas Información..</a>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endblock %}
+        </div>        
+
   </div>
  
 {% endblock %}

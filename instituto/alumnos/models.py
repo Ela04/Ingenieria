@@ -62,8 +62,6 @@ class Cursos(models.Model):
     img              = models.ImageField(upload_to='img/', null=True, blank=True )
     
 
-
-  
     def __str__(self):
         return str(self.nombre)
     class Meta:      
