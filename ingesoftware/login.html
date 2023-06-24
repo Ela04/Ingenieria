@@ -29,7 +29,7 @@
                             <a class="nav-link" href="#">Promociones</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">Registrate</a>
+                            <a class="nav-link" href="login.html">Ingresa</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorias</a>
@@ -56,11 +56,11 @@
                 <form>
                     <div class="mb-3">
                         <label for="username" class="form-label">Username</label>
-                        <input type="text" class="form-control" id="username" name="username" required>
+                        <input type="text" class="form-control" id="username" name="username" pattern="^([a-z]+[0-9]{0,2}){5,12}$" required>
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="password" name="password" required>
+                        <input type="password" class="form-control" id="password" name="password" pattern="[A-Za-z0-9!?-]{8,12}" required>
                     </div>
                     <button type="submit" class="btn btn-primary">Ingresar</button>
                     <p class="warnings" id="warnings"></p>

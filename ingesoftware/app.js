@@ -55,3 +55,18 @@ window.addEventListener("scroll",function(){
     header.classList.toggle("abajo",window.scrollY>0);
 }
 )
+
+const nombre = document.getElementById("name")
+const pass = document.getElementById("pass")
+const mail = document.getElementById("mail")
+const form = document.getElementById("form")
+const parr = document.getElementById("warnings")
+
+form.addEventListener("submit", e=>{
+    e.preventDefault()
+    let warnings = ""
+    if(nombre.Value.length <6){
+        warnings += 'El nombre debe tener al menos 6 caracteres'
+    }
+})
+

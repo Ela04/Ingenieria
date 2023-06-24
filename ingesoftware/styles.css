@@ -111,3 +111,11 @@ button:hover {
 .carousel-controls button {
     margin: 0 5px;
 }
+
+.warnings {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #b06ab0;
+    padding-top:20px ;
+}
