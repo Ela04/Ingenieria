@@ -65,8 +65,24 @@ const parr = document.getElementById("warnings")
 form.addEventListener("submit", e=>{
     e.preventDefault()
     let warnings = ""
+    let entrar = false
+    let regexmail = pattern="[A-Za-z0-9!?-]{8,12}"
+    parr.innerHTML =""
     if(nombre.Value.length <6){
         warnings += 'El nombre debe tener al menos 6 caracteres'
+        entrar = true
+    }
+    if(regexmail.test(mail.Value) == false){
+        warnings += 'El correo no es valido'
+        entrar = true
+    }
+    if(pass.Value.length <6){
+        warnings += 'La contraseña debe tener al menos 6 caracteres'
+        entrar = true
+    }
+    if(entrar){
+        parr.innerHTML = warnings
+    }else{
+        parr.innerHTML = "Registrado"
     }
 })
-
